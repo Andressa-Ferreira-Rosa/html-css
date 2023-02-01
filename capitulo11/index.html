@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 11</title>
+    <style>
+        body{
+            background-color: rgba(166, 255, 212, 0.652);
+            color: rgba(0, 0, 0, 0.775);
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Capítulo 11 - mídias</h1>
+    <h2>Imagens dinâmicas</h2>
+    <picture>
+        <source media="(max-width: 700px)" srcset="../imagem/imagempequena.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="../imagem/imagemmedia.png" type="image/png">
+        <img src="../imagem/imagemgrande.png" alt="imagem flexível">
+    </picture>
+    <p>CUIDADO! A ordem dos source não pode ser invertida!!!</p>
+    <h2>Áudios</h2>
+    <audio src="../audio/368 - Dyalla.mp3" controls autoplay></audio><br>
+    <!-- Arquivos wav são pesadíssimos -->
+    <audio preload="metadata" autoplay controls loop> 
+        <source src="../audio/guanacast-33.mp3" type="audio/mpeg">
+        <source src="../audio/guanacast-33.ogg" type="audio/ogg">
+        <source src="../audio/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="../audio/guanacast-33.mp3" download="guanacast-33.mp3">Clique aqui</a> para baixar o arquivo.</p>
+    </audio><br>
+    <h2>Vídeos</h2>
+    <h3>Vídeos como hospedagem local</h3>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <video width="500" poster="../imagem/cachoeira.jpg" controls >
+        <source src="../video/cachoeira.mp4" type="video/mp4">
+        <source src="../video/cachoeira.webm" type="video/webm">
+        <source src="../video/cachoeira.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <p>Custo de hospedagem por vídeo= (tamanho do arquivo em megabytes x quantidade média de visitas)/1024 = yGB de consumo. Vídeos hospedados no próprio servidor além de custarem caro são muito pesados, oou seja, a tag video pode muito provavelmente deixar o carregamento mais demorado. Mas caso seu cliente queira uma hospedagem local de vídeos aqui está a tabela de múltiplos de bytes.</p>
+    <img src="../imagem/bit-byte-01.png" alt="múltiplos do byte"><br>
+    <h2>Incorporação de vídeos externos</h2>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/sVZpHFXcFJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <a href="../teste.html">Página de teste</a><br>
+    <a href="https://drive.google.com/file/d/1sQXUTskVghatwtn8TnxodOyItenAhzMw/view?usp=share_link">Capítulo 11</a><br>
+    <p>Voltar para a <a href="../links.html">página principal</a>.</p>
+</body>
+</html>

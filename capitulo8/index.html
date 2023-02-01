@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 8</title>
+    <style>
+        body{
+            background-color: rgba(166, 255, 212, 0.652);
+            color: rgba(0, 0, 0, 0.775);
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1>Exercício 5 (cap. 8)</h1>
+<h2>Semântica</h2>
+    <p>Devemos sempre estar de olho nas atualizações do html, pois vez ou outra uma tag se torna obsoleta. Para isso podemos consultar o site <mark style="background-color: rgba(70, 38, 70, 0.295);">W3.org</mark>, o site official da Worldwide Web.</p>
+    <p>Vale mencionar que neste capítulo nos foi apresentada a tag address, que como sugere, ela entrega, além de um significado, a formatação adequada a um endereço.</p>
+<h2 style="color: rgb(122, 3, 3);">Negrito e itálico</h2>
+<h3>Negrito / destaque</h3>
+    <p>Nesta frase temos um <b>termo em destaque</b> porem usando a tag b(não semântica). Nesta frase também temos um <strong>termo em destaque</strong>, porém usando a  <mark style="background-color:rgba(108, 201, 108, 0.452); color: rgba(18, 48, 18, 0.452);">tag strong(semântica)</mark>.</p>
+<h3>Itálico / ênfase</h3>
+    <p>Nesta frase temos um <i>termo em itálico</i>, usando a tag i(Não semântica). Nesta frase também temos um <em>termo em itálico</em>, porém usando a <mark style="background-color:rgba(108, 201, 108, 0.452) ; color:rgba(18, 48, 18, 0.452);">tag em(semântica)</mark>.</p>
+<h2>Outras formatações</h2>
+<h3>Texto marcado</h3>
+    <p>Neste texto há <mark style="background-color:rgba(97, 97, 167, 0.473) ;">um termo marcado</mark> usando a tag mark.</p> 
+    <p><mark style="background-color: rgba(241, 165, 23, 0.562);">Atenção</mark>: a tag mark ainda não foi reconhecida pelo VSCode.</p>
+<h3>Texto grande e pequeno</h3>
+    <p>Nesta frase temos um <big>termo grande</big>(usando a tag big, que é obsoleta e não semântica) e <small>um pequeno</small>(usando a tag small, que é semântica por ser usada em contratos).</p>
+<h3>Texto deletado</h3>
+    <p>Podemos destacar um <del>texto como excluído</del> para indicar que ele deve ser lido mas não considerado, usando a tag del.</p>
+<h3>Texto inserido</h3>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para indicar que ele foi adicionado posteriormente, usando a tag ins.</p>
+    <p><mark style="background-color: rgba(241, 165, 23, 0.562);">Atenção</mark>: embora ins e u proporcionem o mesmo efeito visual, <mark style="background-color: rgba(108, 201, 108, 0.452) ; color:rgba(18, 48, 18, 0.452);">a tag ins é semântica</mark>, diferentemente da tag u, que não é semântica. </p>
+<h3>Sobrescrito e subscrito</h3>
+    <p>Nesta frase temos um <sup>texto sobrescrito</sup> e um <sub>texto subscrito</sub>, usando as tags sup e sub, respectivamente. Exemplos de uso: 2<sup>2</sup>=4 e água= H<sub>2</sub>O.</p>
+<h2>Mais formatações</h2>
+<h3>Código-fonte e pré-formatação</h3>
+    <p>O código <code>document.getElemntById('teste')</code> é usado em JavaScript. Esse código foi formatado na tag code.</p>
+        <p>Já o código a seguir foi formatado tanto na tag code quanto em pre. Essa última tag garante o espaçamento e a tabulação exatamente igual ao digitado no VSCode.</p>
+<pre>
+    <code>
+        num= int(input('Digite um número:'))
+        if num % 2 == 0
+            print(f'O número {num} é par')
+        else:
+            print(f'O número {num} é impar')
+        print('Fim do programa')
+    </code>
+</pre>
+<h3>Citações</h3>
+    <p>Uma citação famosa de Jesus é: <q>Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai senão por mim</q>. Essa citação foi formatada na tag q, que é semântica.</p>
+<h3>Citações complexas</h3>
+    <p>Segundo Gustavo Guanabara no capítulo 8 do curso:</p>
+    <blockquote cite="https://drive.google.com/file/d/1n9n_B9sHWzAO7usw8fJBPKfQkZy3KcEM/view?usp=share_link">
+            Existem tags que ainda funcionam hoje em dia, mas estão prestes a serem consideradas obsoletas, como as tags font e center.
+    </blockquote>
+<h3>Abreviações</h3>
+    <p>Usamos <abbr title="HiperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> para criar sites. <mark style="background-color: orange;">Passe o mouse por cima das siglas</mark>.</p>
+<a href="https://drive.google.com/file/d/1n9n_B9sHWzAO7usw8fJBPKfQkZy3KcEM/view?usp=share_link">Capítulo 8</a>
+<p>Voltar para a <a href="../links.html">página principal</a>.</p>
+</body>
+</html>
