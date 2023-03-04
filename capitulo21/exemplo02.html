@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela</title>
+    <title>Exemplo tabela zebrada</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -19,8 +19,11 @@
             padding: 10px;
             background-color: lightgrey;
         }
-        tbody > tr:nth-child(2n){
+        tbody > tr:nth-child(even){ /*2n  ou par*/
             background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd){ /*2n-1 ou ímpar*/
+            background-color: rgb(161, 156, 156);
         }
         td, th{
             border: 1px solid black;
@@ -36,18 +39,7 @@
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas</h1>
-    <!-- Anatomia de tabelas grandes
-    TABLE
-        CAPTION
-        THEAD
-            TR, TD, TH
-        TBODY
-            TR, TD, TH
-        TFOOT
-            TR, TD, TH
-     -->
-     <table>
+    <table>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
